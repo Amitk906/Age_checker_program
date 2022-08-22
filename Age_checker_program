@@ -1,0 +1,15 @@
+import random
+while True: # comment this line if you don't want to run in a loop and delete the tabs from line 7 to 19.
+    print('''\nAge checker for registration\n''')
+    reqage = 18
+    form = int(input("Enter your age for registration : "))
+    add = (form - reqage)
+
+    if form == reqage:
+        print("Congratulation! you're Hired")
+    elif form > reqage:
+        print("Sorry! you're young to match our require age experince !")
+    elif form <reqage:
+        print(f"Sorry! you're need to wait for",add,"years to match our require age experince !")
+    else:
+        print("There is Some issue")
